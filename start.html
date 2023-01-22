@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>ebooks</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="logo.jpg" alt="logo"></div>
+            <li><a href="#">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Categories</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="Fiction.html">Fiction</a>
+                        <a href="NonFiction.html">Nonfiction</a>
+                        <a href="SchoolBooks.html">School Books</a>
+                    </div>
+            </li>
+            <li><a href="#aboutus">About</a></li>
+            <li><a href="#buy">Buy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">The Future of book store is here</p>
+                <p class="text-small">Books are mirrors: you only see in them what you already have inside you.</p>
+                <div class="buttons">
+
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="logo.jpg" alt="Laptop Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="fiction">
+        <div class="paras">
+            <p class="sectionTag text-big">Fiction books</p>
+            <p class="sectionSubTag text-small">A fictional book is a text created specifically for a work in an
+                imaginary narrative that is referred to, depicted, or excerpted in a story, book, film, or other
+                fictional work, and which exists only in one or more fictional works. A fictional book may be created to
+                add realism or depth to a larger fictional work. A fictional book may provide the basis of the plot of a
+                story, a common thread in a series of books or other works, or the works of a particular writer or canon
+                of work.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?novel" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section section-left" id="nonfiction">
+        <div class="paras">
+            <p class="sectionTag text-big">Nonfiction books</p>
+            <p class="sectionSubTag text-small">Nonfiction (also spelled non-fiction) is any document or media content
+                that intends, in good faith, to present only truth and accuracy regarding information, events, or
+                people.Nonfictional content may be presented either objectively or subjectively. Sometimes taking
+                the form of a story, nonfiction is one of the fundamental divisions of narrative writing in contrast to
+                fiction, which offers information, events, or characters expected to be partly
+                or largely imaginary, or else leaves open if and how the work refers to reality.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?book" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+    <section class="section" id="schoolbook">
+        <div class="paras">
+            <p class="sectionTag text-big">School Books</p>
+            <p class="sectionSubTag text-small">Here you can get school books from class 8-12 regardless of the
+                education boards.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?school" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+    <section class="section" id="aboutus">
+        <div class="paras">
+            <p class="sectionTag text-big">About Us</p>
+            <p class="sectionSubTag text-small">Ebooks is one of the largest and most famous store to buy books online.
+                We are continously updating our services so that we can help you and provide as many as books.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact" id="buy">
+        <h1 class="text-center">Purchase</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email">
+            <input class="form-input" type="text" name="book" id="book" placeholder="Enter Book name">
+            <input class="form-input" type="text" name="author" id="author" placeholder="Enter author name">
+            <textarea class="form-input" name="text" id="text" cols="20" rows="10"
+                placeholder="How you want to pack it..eg(normal pack,gift..etc)"></textarea>
+                <div>
+                    <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+                </div>
+            <!-- <button class="btn btn-sm btn-dark">Submit</button> -->
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10"
+                placeholder="Ellaborate your concern"></textarea>
+            <button class="btn btn-sm btn-dark">Submit</button>
+        </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2200 - www.ebooks.com - All rights reserved
+        </p>
+    </footer>
+    <script src="js/jsep.js"></script>
+
+</body>
+
+</html>
